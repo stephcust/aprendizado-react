@@ -13,5 +13,5 @@
  - Hook useEffect
 
 ### Cursos
- 1. Carrefour Web Developer Bootcamp (ReactJs) - Digital Innovation One
- 2. Curso de React - CFB Cursos (Youtube)
+ 1. [Carrefour Web Developer Bootcamp (ReactJs) - Digital Innovation One](https://web.dio.me/track/carrefour-web-developer)
+ 2. [Curso de React - CFB Cursos (Youtube)](https://youtube.com/playlist?list=PLx4x_zx8csUh752BVDGZkxYpY9lS40fyC) 
