@@ -1,36 +1,15 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 //import Led from './components/Led'
-import Nota from './components/Nota'
-import Resultado from './components/Resultado';
-
+//import Nota from './components/Nota'
+//import Resultado from './components/Resultado';
+//import Caixa from './components/Caixa';
+//import Canal from './components/Canal';
 
 export default function App() {
-
-  const [notas, setNotas] = useState({"nota1":0,"nota2":0,"nota3":0,"nota4":0})
-  const handleChangeNota=(e)=>{
-    if(e.target.getAttribute('name') == "n1"){
-      setNotas({"nota1":e.target.value,"nota2":notas.nota2,"nota3":notas.nota3,"nota4":notas.nota4})
-    }
-    else if(e.target.getAttribute('name') == "n2"){
-      setNotas({"nota1":notas.nota1,"nota2":e.target.value,"nota3":notas.nota3,"nota4":notas.nota4})
-    }
-    else if(e.target.getAttribute('name') == "n3"){
-      setNotas({"nota1":notas.nota1,"nota2":notas.nota2,"nota3":e.target.value,"nota4":notas.nota4})
-    }
-    else if(e.target.getAttribute('name') == "n4"){
-      setNotas({"nota1":notas.nota1,"nota2":notas.nota2,"nota3":notas.nota3,"nota4":e.target.value})
-    }
-  }
-  
-
+    
   return (
     <>
-     <Nota num = {1} nome={"n1"} nota={notas.nota1} setNota={handleChangeNota}/>
-     <Nota num = {2} nome={"n2"} nota={notas.nota2} setNota={handleChangeNota}/>
-     <Nota num = {3} nome={"n3"} nota={notas.nota3} setNota={handleChangeNota}/>
-     <Nota num = {4} nome={"n4"} nota={notas.nota4} setNota={handleChangeNota}/>
-     <Resultado somaNotas={
-       parseFloat(notas.nota1)+parseFloat(notas.nota2)+parseFloat(notas.nota3)+parseFloat(notas.nota4)}/>
+      
     </>
   );
 }
@@ -109,3 +88,43 @@ onClick={(e)=>cancelar(e)}>
 //     setForm({"nome":form.nome,"curso":form.curso,"ano":e.target.value})
 //   }
 // }
+
+// const [notas, setNotas] = useState({"nota1":0,"nota2":0,"nota3":0,"nota4":0})
+//   const handleChangeNota=(e)=>{
+//     if(e.target.getAttribute('name') == "n1"){
+//       setNotas({"nota1":e.target.value,"nota2":notas.nota2,"nota3":notas.nota3,"nota4":notas.nota4})
+//     }
+//     else if(e.target.getAttribute('name') == "n2"){
+//       setNotas({"nota1":notas.nota1,"nota2":e.target.value,"nota3":notas.nota3,"nota4":notas.nota4})
+//     }
+//     else if(e.target.getAttribute('name') == "n3"){
+//       setNotas({"nota1":notas.nota1,"nota2":notas.nota2,"nota3":e.target.value,"nota4":notas.nota4})
+//     }
+//     else if(e.target.getAttribute('name') == "n4"){
+//       setNotas({"nota1":notas.nota1,"nota2":notas.nota2,"nota3":notas.nota3,"nota4":e.target.value})
+//     }
+//   }
+{/* <Nota num = {1} nome={"n1"} nota={notas.nota1} setNota={handleChangeNota}/>
+     <Nota num = {2} nome={"n2"} nota={notas.nota2} setNota={handleChangeNota}/>
+     <Nota num = {3} nome={"n3"} nota={notas.nota3} setNota={handleChangeNota}/>
+     <Nota num = {4} nome={"n4"} nota={notas.nota4} setNota={handleChangeNota}/>
+     <Resultado somaNotas={
+       parseFloat(notas.nota1)+parseFloat(notas.nota2)+parseFloat(notas.nota3)+parseFloat(notas.nota4)}/> */}
+
+    // <Caixa site='www.cfbcursos.com.br'>
+    //     <h1>CFB Cursos</h1>
+    //     <p>Curso de react</p>
+    //     <Canal/>
+    //   </Caixa>
+
+    //useEffect é chamado quando a página é montada e sempre q a mesma é atualizada
+  // const [cont, setCont] = useState(0);
+
+  // useEffect(
+  //   ()=>{
+  //     document.title = "Contagem: "+cont;
+  //     console.log("Página carregada")
+  //   }
+  // )
+  // <p>Contagem: {cont}</p>
+  //     <button onClick={()=>setCont(cont+1)}>Contar</button>

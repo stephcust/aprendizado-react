@@ -9,6 +9,8 @@
  - Listas usando MAP
  - Manipulação de formulários e de objetos com states
  - Elevação de states
+ - Passagem de componentes e elementos através de props.children (Contenção)
+ - Hook useEffect
 
 ### Cursos
  1. Carrefour Web Developer Bootcamp (ReactJs) - Digital Innovation One
