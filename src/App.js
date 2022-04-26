@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
+import Carro from './components/Carro';
 //import Led from './components/Led'
 //import Nota from './components/Nota'
 //import Resultado from './components/Resultado';
@@ -7,9 +8,12 @@ import React, {useState, useEffect} from 'react';
 
 export default function App() {
     
+ 
+
   return (
     <>
-      
+      <h1>Componentes de Classe</h1>
+      <Carro fator={10}/>
     </>
   );
 }
@@ -128,3 +132,18 @@ onClick={(e)=>cancelar(e)}>
   // )
   // <p>Contagem: {cont}</p>
   //     <button onClick={()=>setCont(cont+1)}>Contar</button>
+
+ //localStorage.setItem("nome", "Stepheson")
+  //localStorage.getItem("nome");
+  //localStorage.removeItem("nome");
+  // const [nome, setNome] = useState();
+
+  // const armazenar = (key, value) => {
+  //   localStorage.setItem(key, value);
+  // }
+  // const consultar = (key) => {
+  //   alert(localStorage.getItem(key));
+  // }
+  // const apagar = (key) => {
+  //   localStorage.removeItem(key);
+  // }
